@@ -9,7 +9,8 @@ submitBtn.addEventListener("click", (e) => {
     const newP = document.createElement("p");
     const textValue = newP.innerHTML = inputValue;
     main.appendChild(newP);
-    
+    console.log(inputValue.length);
+    console.log(inputValue);
 });
 
 clearButton.addEventListener("click", (e) => {
