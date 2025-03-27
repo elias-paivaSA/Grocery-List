@@ -11,6 +11,7 @@ submitBtn.addEventListener("click", (e) => {
     const newButton1 = document.createElement("button");
     const newButton2 = document.createElement("button");
     const textValue = newP.innerHTML = inputValue;
+    const wrapP = document.createElement("")
     main.appendChild(newP);
     main.appendChild(newButton1);
     main.appendChild(newButton2);
