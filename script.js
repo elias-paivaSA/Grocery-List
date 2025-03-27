@@ -13,8 +13,11 @@ submitBtn.addEventListener("click", (e) => {
     const textValue = newP.innerHTML = inputValue;
     main.appendChild(newP);
     main.appendChild(newButton1);
-    newButton1.id
     main.appendChild(newButton2);
+    newButton1.id = "button1";
+    newButton2.id = "button2";
+    newButton1.innerHTML = "Edit";
+    newButton2.innerHTML = "Delete";
     form.reset();
 });
 
