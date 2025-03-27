@@ -6,17 +6,15 @@
     font-size: 20px;
 }
 
-header {
-    
+header, main {
     margin: 30px 0;
-}
-
-main {
-    display: flex;
-    justify-content:baseline;
 }
 
    
 #button1 {
     margin-right: 20px;
+}
+
+#clear {
+    margin-top: 30px;
 }

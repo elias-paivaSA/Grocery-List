@@ -2,7 +2,8 @@ const input = document.getElementById("grocery");
 const submitBtn = document.getElementById("btn");
 const main = document.getElementById("main");
 const clearButton = document.getElementById("clear");
-const form = document.getElementById("form")
+const form = document.getElementById("form");
+const wrapP = document.getElementById("wrapP");
 
 submitBtn.addEventListener("click", (e) => {
     e.preventDefault();
@@ -11,8 +12,9 @@ submitBtn.addEventListener("click", (e) => {
     const newButton1 = document.createElement("button");
     const newButton2 = document.createElement("button");
     const textValue = newP.innerHTML = inputValue;
-    const wrapP = document.createElement("")
     main.appendChild(newP);
+    newP.innerHTML = inputValue;
+    wrapP.appendChild(newP);
     main.appendChild(newButton1);
     main.appendChild(newButton2);
     newButton1.id = "button1";
