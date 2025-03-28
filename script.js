@@ -1,28 +1,31 @@
-const input = document.getElementById("grocery");
-const submitBtn = document.getElementById("btn");
+const submitBtn = document.getElementById("submitBtn");
 const main = document.getElementById("main");
+const textInput = document.getElementById("textInput");
 const clearButton = document.getElementById("clear");
-const form = document.getElementById("form");
-const wrapP = document.getElementById("wrapP");
+const editBtn = document.getElementById("mainBtn1");
+
 
 submitBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    const inputValue = input.value;
-    const newP = document.createElement("p");
-    const newButton1 = document.createElement("button");
-    const newButton2 = document.createElement("button");
-    const textValue = newP.innerHTML = inputValue;
-    main.appendChild(newP);
-    newP.innerHTML = inputValue;
-    wrapP.appendChild(newP);
-    main.appendChild(newButton1);
-    main.appendChild(newButton2);
-    newButton1.id = "button1";
-    newButton2.id = "button2";
-    newButton1.innerHTML = "Edit";
-    newButton2.innerHTML = "Delete";
-    form.reset();
+   const divWrapper = document.createElement("div");
+   divWrapper.id = "main-wrapper";
+   main.appendChild(divWrapper);
+   const pWrapper = document.createElement("p");
+   pWrapper.id = "mainP"
+   pWrapper.innerHTML = textInput.value;
+   divWrapper.appendChild(pWrapper);
+   const btnWrappe1r = document.createElement("button");
+   btnWrappe1r.id = "mainBtn1";
+   btnWrappe1r.innerHTML = "Edit";
+   divWrapper.appendChild(btnWrappe1r);
+   const btnWrappe2r = document.createElement("button");
+   btnWrappe2r.id = "mainBtn2";
+   btnWrappe2r.innerHTML = "Delete";
+   divWrapper.appendChild(btnWrappe2r);
+   form.reset();
 });
+
+
 
 clearButton.addEventListener("click", (e) => {
     e.preventDefault();

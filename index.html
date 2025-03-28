@@ -6,20 +6,25 @@
     <link rel="stylesheet" href="style.css">
     <title>Grocery List</title>
 </head>
-<body id="body">
+<body>
     <div id="main-container">
-        <header>Grocery List</header>
-        <form action="" id="form">
-            <input type="text" name="grocery" id="grocery">
-            <button id="btn">Submit</button>
-        </form>
-        <div id="wrap-main">
+        <div id="wrapper">
+            <header>Grocery List</header>
+            <section id="form-wrapper">
+                <form action="" id="form">
+                    <input type="text" id="textInput">
+                    <button id="submitBtn">Submit</button>
+                </form>
+            </section>
             <main id="main">
-                <div id="wrapP"></div>
-            </main> 
+            </main>
+            <button id="clear">Clear Items</button>
+
         </div>
-        <button id="clear">Clear Items</button>
-        <script src="script.js"></script>
     </div>
+        
+               
+    <script src="script.js"></script>
 </body>
 </html>
+
