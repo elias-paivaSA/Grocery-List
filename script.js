@@ -2,7 +2,6 @@ const submitBtn = document.getElementById("submitBtn");
 const main = document.getElementById("main");
 const textInput = document.getElementById("textInput");
 const clearButton = document.getElementById("clear");
-const editBtn = document.getElementById("mainBtn1");
 
 
 submitBtn.addEventListener("click", (e) => {
@@ -23,8 +22,11 @@ submitBtn.addEventListener("click", (e) => {
    btnWrappe2r.innerHTML = "Delete";
    divWrapper.appendChild(btnWrappe2r);
    form.reset();
-});
 
+   btnWrappe1r.addEventListener("click", function() {
+    console.log(btnWrappe1r.previousSibling.innerHTML);
+});
+});
 
 
 clearButton.addEventListener("click", (e) => {
