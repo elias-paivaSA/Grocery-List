@@ -2,6 +2,7 @@ const submitBtn = document.getElementById("submitBtn");
 const main = document.getElementById("main");
 const textInput = document.getElementById("textInput");
 const clearButton = document.getElementById("clear");
+const mainWrapper = document.getElementById("mainWrapper");
 
 
 submitBtn.addEventListener("click", (e) => {
@@ -24,8 +25,15 @@ submitBtn.addEventListener("click", (e) => {
    form.reset();
 
    btnWrappe1r.addEventListener("click", function() {
-    console.log(btnWrappe1r.previousSibling.innerHTML);
+    const editInput = btnWrappe1r.previousSibling.innerHTML;
+    const inputLine = textInput.value = editInput;
+    btnWrappe1r.parentElement.remove();
 });
+
+btnWrappe2r.addEventListener("click", function() {
+    btnWrappe2r.parentElement.remove();
+});
+
 });
 
 
